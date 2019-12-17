@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">文件看海</string>
+    <string name="settings">设置</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">搜索文件记录</string>
+    <string name="search_dialog">区分大小写</string>
+    <string name="search_summary">不输入内容，点击确定，则显示所有记录</string>
+    <string name="about">关于</string>
+
+    <string name="path_key">监视路径</string>
+    <string name="path_value">默认/storage/emulated/0</string>
+    <string name="mask_key">监视行为</string>
+    <string name="mask_value">监视“访问”和“打开”会有重复消息</string>
+    <string name="color_key">字体颜色</string>
+    <string name="color_value">默认#8A6BBE</string>
+    <string name="github_key">项目地址</string>
+    <string name="github_value">https://github.com/lnstow/FileMonitor</string>
+    <string name="ref_key">参考</string>
+    <string name="ref_value">https://play.google.com/store/apps/details?id=com.gmail.heagoo.filemon</string>
+    <string name="exclude_key">排除路径</string>
+    <string name="exclude_value">不监视目录，以换行分隔多个</string>
+
+    <string-array name="mask_entries">
+        <item>访问</item>
+        <item>修改</item>
+        <item>关闭</item>
+        <item>打开</item>
+        <item>移动</item>
+        <item>创建</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="mask_values">
+        <item>00000001</item>
+        <item>00000002</item>
+        <item>00000018</item>
+        <item>00000020</item>
+        <item>000008C0</item>
+        <item>00000100</item>
+        <item>00000600</item>
+    </string-array>
+</resources>

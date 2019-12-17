@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/settings">
+        <EditTextPreference
+            android:dialogTitle="@string/path_value"
+            android:key="path"
+            android:title="@string/path_key"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:dialogTitle="@string/exclude_value"
+            android:key="exclude"
+            android:title="@string/exclude_key"
+            app:useSimpleSummaryProvider="true" />
+        <MultiSelectListPreference
+            android:entries="@array/mask_entries"
+            android:entryValues="@array/mask_values"
+            android:key="mask"
+            android:summary="@string/mask_value"
+            android:title="@string/mask_key" />
+        <EditTextPreference
+            android:dialogTitle="@string/color_value"
+            android:key="color"
+            android:title="@string/color_key"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/search">
+        <EditTextPreference
+            android:dialogTitle="@string/search_dialog"
+            android:key="search"
+            android:summary="@string/search_summary"
+            android:title="@string/search_hint" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:key="github"
+            android:summary="@string/github_value"
+            android:title="@string/github_key"
+            app:enableCopying="true">
+            <!--            <intent-->
+            <!--                android:action="android.intent.action.VIEW"-->
+            <!--                android:data="@string/github_value" />-->
+        </Preference>
+        <Preference
+            android:key="ref"
+            android:summary="@string/ref_value"
+            android:title="@string/ref_key"
+            app:enableCopying="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

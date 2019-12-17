@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <androidx.core.widget.NestedScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:fillViewport="true"-->
+        <!--            android:scrollbars="vertical"-->
+        <!--            android:id="@+id/scroll">-->
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <!--            app:fastScrollEnabled="true"-->
+            <!--            app:fastScrollHorizontalThumbDrawable="@drawable/fast_scroll_thumb"-->
+            <!--            app:fastScrollHorizontalTrackDrawable="@drawable/fast_scroll_track"-->
+            <!--            app:fastScrollVerticalThumbDrawable="@drawable/fast_scroll_thumb"-->
+            <!--            app:fastScrollVerticalTrackDrawable="@drawable/fast_scroll_track"-->
+
+        </HorizontalScrollView>
+        <!--        </androidx.core.widget.NestedScrollView>-->
+
+        <FrameLayout
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#FFFF" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
